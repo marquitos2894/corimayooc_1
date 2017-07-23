@@ -1,0 +1,40 @@
+#caja_busqueda /*estilos para la caja principal de busqueda*/
+{
+width:100%;
+height:50px;
+border:solid 2px #979DAE;
+font-size:16px;
+border-radius: 5px;
+}
+#display /*estilos para la caja principal en donde se puestran los resultados de la busqueda en forma de lista*/
+{
+width:100%;
+display:none;
+overflow:hidden;
+z-index:10;
+border: solid 1px #666;
+}
+.display_box /*estilos para cada caja unitaria de cada usuario que se muestra*/
+{
+padding:2px;
+padding-left:6px; 
+font-size:18px;
+height:63px;
+text-decoration:none;
+color:#3b5999; 
+}
+
+.display_box:hover /*estilos para cada caja unitaria de cada usuario que se muestra. cuando el mause se pocisiona sobre el area*/
+{
+background: #415AB5;
+color: #FFF;
+}
+.desc
+{
+color:#666;
+font-size:16;
+}
+.desc:hover
+{
+color:#FFF;
+}

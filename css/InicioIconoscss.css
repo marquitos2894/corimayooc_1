@@ -1,0 +1,101 @@
+
+
+
+body{
+	font-family: 'arial',sans-serif;
+	font-size: 16px;
+}
+
+/* Decimos que el ancho maximo de una imagen sea 100%, esto sirvira para que sea flexible */
+img{
+	max-width: 100%;
+}
+
+header{
+	text-align: center;
+	width: 100%;
+        align-content: center;
+}
+
+
+.content{
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+
+.container .cuadros article{
+	background: #FFCC33;
+	box-shadow: 3px 10px 3px gray;
+	height: 55%;
+        
+	
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+.container .cuadros article h2{
+	color: black; /*Se cambio el color white por el marron que tiene el nav*/
+	
+}
+
+.container .cuadros article figure img{
+
+	border-radius: 50%;
+	height: 65%;
+	width: 65%;
+
+}
+
+
+@media screen and (min-width: 600px){
+	.container .cuadros{
+		overflow: hidden;
+	}
+	/* Todos los articulos se alinean a la izquierda */
+	.container .cuadros article{
+		float: left;
+		margin: 15px 10px;
+		/*Para eso digo que los articulos tenga un ancho de 30% */
+		width: 30%;
+	}
+}
+
+/*
+@media screen and (min-width: 900px){
+	
+	header{
+		text-align: left;
+	}
+
+	
+
+	.container{
+		overflow: hidden;
+	}
+
+	.container .cuadros{
+		La sección de Productos este alineado a la izquierda y que su ancho sea 81% 
+		float:left;
+		width: 81%;
+	}
+	Hago que aparesca el bloque del aside 
+	.container aside{
+		display: block;
+	}
+
+
+
+	.container aside figure{
+		margin:0;
+	}
+
+}*/
+

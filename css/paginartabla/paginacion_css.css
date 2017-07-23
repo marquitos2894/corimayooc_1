@@ -1,0 +1,64 @@
+
+
+.pag_btn { 
+  color: #FFFFFF; 
+  background-color: #3898FF; 
+  border-color: #64636B; 
+  font-size: 20px;
+  border-radius: 8px;
+} 
+ 
+.pag_btn:hover, 
+.pag_btn:focus, 
+.pag_btn:active, 
+.pag_btn.active, 
+.open .dropdown-toggle.pag_btn { 
+  color: #FFFFFF; 
+  background-color: #6607E3; 
+  border-color: #64636B; 
+} 
+ 
+.pag_btn:active, 
+.pag_btn.active, 
+.open .dropdown-toggle.pag_btn { 
+  background-image: none; 
+} 
+ 
+.pag_btn.disabled, 
+.pag_btn[disabled], 
+fieldset[disabled] .pag_btn, 
+.pag_btn.disabled:hover, 
+.pag_btn[disabled]:hover, 
+fieldset[disabled] .pag_btn:hover, 
+.pag_btn.disabled:focus, 
+.pag_btn[disabled]:focus, 
+fieldset[disabled] .pag_btn:focus, 
+.pag_btn.disabled:active, 
+.pag_btn[disabled]:active, 
+fieldset[disabled] .pag_btn:active, 
+.pag_btn.disabled.active, 
+.pag_btn[disabled].active, 
+fieldset[disabled] .pag_btn.active { 
+  background-color: #3898FF; 
+  border-color: #64636B; 
+} 
+ 
+.pag_btn .badge { 
+  color: #3898FF; 
+  background-color: #FFFFFF; 
+}
+
+
+ 
+
+ 
+.pag_num {
+    border: solid 5px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+ 
+    padding-right:  20px;
+
+    
+}
