@@ -262,6 +262,7 @@ class ordencompra
                         echo "<td rowspan='1'>"
                             . "<a class='btn btn-primary btn-xs' href='../../reportes/reportes/reporteOC.php?id=".$reg[0]."' target='_blank'>VER PDF</a>"
                             . "<a class='btn btn-default btn-xs' href='../../reportes/exportar.php?id=".$reg[0]."' target='_blank' >VER EXCEL</a>"
+                            . "<a class='btn btn-danger btn-xs' href='OcSeg_View.php?id=".$reg[0]."&prove=".$reg[2]."&fecha=".$reg[5]."&empre=".$reg[1]." ' target='_blank' >Seguimiento</a>"
                             . "</td>";             
                        
                         echo "<td><a class='btn btn-warning' href='../../Controlador/ocController.php?id_anular=".$reg["id_oc"]."'>ANULAR</a></td>";       

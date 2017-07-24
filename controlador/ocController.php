@@ -44,6 +44,7 @@ if(isset($_POST['fecha']) && isset($_POST['IdEmpresa']) && isset($_POST['Empresa
     if(isset($_POST['componen']))
         {
 
+        // RECIBOS DATOS DEL ARREGLO COMPONENTE
         $comp = ($_POST['componen']);
         $compo = ltrim($comp);
         $com = explode(',',($compo)); // LO SEPARO CON UN DELIMITADOR POR COMAS
@@ -72,9 +73,9 @@ if(isset($_POST['fecha']) && isset($_POST['IdEmpresa']) && isset($_POST['Empresa
         //    echo $cant[$index].'<br>';
         //    echo $pre[$index].'<br>';
         //    echo $tot[$index].'<br>';
-
+            $Seg_m->ins_seg($id,$com, $npart,$cant,$cant);
             $obj->ins_detalle_Oc($id,$com, $npart, $cant, $pre, $tot);
-            $Seg_m->ins_seg($id,$com, $npart, $cant);
+            
            // } 
 
         }
@@ -200,10 +201,3 @@ if(isset($_POST['nomproveedor']) ) //BUSQUEDA DETALLADA DE OC
     
     
 }
-
-
-
-
-
-//---------------------------------------------------------------
-
