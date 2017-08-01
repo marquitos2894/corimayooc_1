@@ -128,6 +128,20 @@ $log = new Login();
                                     <img src="img/inicio/iconos_reportes.png "></a>
                             </figure>
                     </article>
+                    <!--article>
+                        <h3>Sandvik</h3>
+                            <figure>
+                                <a href="https://atyourservice.smc.sandvik.com/web/guest" >  
+                                    <img src="img/inicio/logo_sandvik.png "></a>
+                            </figure>
+                    </article>
+                    <article>
+                        <h3>Ferreyros</h3>
+                            <figure>
+                                <a href="https://parts.cat.com/es/ferreyros" >  
+                                    <img src="img/inicio/portal _cat.jpg "></a>
+                            </figure>   
+                    </article-->
              
 	</section>
       </div>
@@ -242,7 +256,7 @@ $log = new Login();
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Aplicacion OC v1.0</h3>
+                        <h3>Aplicacion OC v1.2</h3>
                         <p>Orden Compra, es un sofware tecnologico, que facilta el trabajo, con reportes detallados y agiliza la busqueda de informacion</p>
                     </div>
                 </div>

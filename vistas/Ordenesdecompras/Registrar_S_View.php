@@ -43,11 +43,33 @@ $objconex ->conectar();
         <script src="../../../corimayooc_1/js/fecha.js" type="text/javascript"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1 ">
         
+        <script type="text/javascript">
+            
+            function validacion()
+            {
+               cant_Ing=document.getElementById('cantI').value;
+               cant_Fal=document.getElementById('cantF').value;
+
+               if(cant_Ing > cant_Fal)
+               {
+                alert('[ERROR]La cantidad a ingresar supera a la que se requiere');
+                return false;
+                }
+                
+                
+                return true;
+                
+
+            }
+
+
+        </script>
+     
         
                
     </head>
 
-    <body onload="getDate()">
+    <body onload="getDate(), document.getElementById('gremi').focus();">
            
             
                     <?php	
@@ -60,11 +82,8 @@ $objconex ->conectar();
                         ?>
             
        
-	  <h1>Registrar Componente.</h1>
-   <div class="info"><p> Registre el ingreso de componente </p></a></div>
-  
-    
-<form id="form2" name="form2" action="../../controlador/Seg_Controller.php"  method="POST">
+	    
+<form id="form2" name="form2"  action="../../controlador/Seg_Controller.php"  method="POST" onsubmit="return validacion()" >
 	    <h1></h1>
 	   <input type="hidden" name="id_seg" value="<?php echo $id; ?>"
            <input type="hidden" name="id_oc" value="<?php echo $id_oc; ?>"
@@ -91,7 +110,7 @@ $objconex ->conectar();
             <div class="form-group">
 		<p>Cantidad Faltante<span>*</span></p>
 		<span class="icon-case"><i class="fa fa-male"></i></span>
-                <input type="text" value="<?php echo $cant; ?>" name="cantFal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné." readonly=""/>
+                <input type="text" id="cantF" value="<?php echo $cant; ?>" name="cantFal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné." readonly=""/>
                 <div class="validation"></div>
             </div> 
 
@@ -124,7 +143,7 @@ $objconex ->conectar();
 
 	</div>
 	
-        <button type="submit"  class="bouton-contact">Registrar</button>
+        <button type="submit"   class="bouton-contact">Registrar</button>
 	
 </form>	
 

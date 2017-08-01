@@ -12,8 +12,6 @@
 //$id_usu = $_SESSION['id_usu'];
 ?>
 
-
-    
 <?php
 
 include_once ("../../conexion/conexion.php");
@@ -90,7 +88,7 @@ $fecha = $_GET["fecha"];
         
          
     </head>
-    <body id="page-top" class="index"  > 
+    <body class="index"  > 
         
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -131,7 +129,7 @@ $fecha = $_GET["fecha"];
         </nav><br><br><br><br><br><br><br> <br><br><br><br>
      
              
-        <form name="Frm_Oc_view" action="" method="post">
+        <form name="Frm_Oc_view"  method="post">
                          
            <div id="cuadro" class="table-responsive"/>
              
@@ -168,10 +166,10 @@ $fecha = $_GET["fecha"];
                         <td align='center'><?php echo $reg[2] ?></td>
                         <td align='center'><?php echo $reg[3] ?></td>
                         <td align='center'><?php echo $reg[5] ?></td>
-                        <td align='center'><?php echo $reg[4] ?></td>
+                        <td align='center' style="font-weight:bold;color:red"><?php echo $reg[4] ?></td>
                         
                     <?php 
-                    echo "<td><a  class='fancybox fancybox.iframe, btn btn-danger btn' href='Registrar_S_View.php?id=".$reg[0]."&compo=".$reg[2]."&nparte=".$reg[3]."&cant=".$reg[4]."' target='_blank'>Registro</a></td>";
+                    echo "<td><a class='fancybox fancybox.iframe, btn btn-danger btn' href='Registrar_S_View.php?id=".$reg[0]."&compo=".$reg[2]."&nparte=".$reg[3]."&cant=".$reg[4]."' target='_blank'>Registro</a></td>";
                     echo "<td><a class='fancybox fancybox.iframe, btn btn-primary btn' href='Historial_seg.php?id_seg=".$reg[0]."' target='_blank' >Historial</a></td>";
                     
                     }?>
